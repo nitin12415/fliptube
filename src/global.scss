@@ -1,0 +1,89 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: 'Poppins'; //This is what we are going to call
+    src: url('assets/font/Poppins/Poppins-Regular.ttf');
+  }
+
+.ion-color-white {
+    --ion-color-base: var(--ion-color-white);
+    --ion-color-base-rgb: var(--ion-color-white-rgb);
+    --ion-color-contrast: var(--ion-color-white-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+    --ion-color-shade: var(--ion-color-white-shade);
+    --ion-color-tint: var(--ion-color-white-tint);
+}
+
+.custom-modal .modal-wrapper {
+    --height: 95%;
+    margin-top: 10% !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+ion-content {
+    --background: #f3f3f3;
+    font-family: Poppins !important;
+  }
+  
+  ion-footer ion-toolbar {
+    --background: #f3f3f3;
+    font-family: Poppins !important;
+    padding-bottom: 5px;
+  }
+  
+  ion-label {
+    font-family: Poppins !important;
+  }
+  
+  p {
+    font-family: Poppins !important;
+  }
+  
+  b {
+    font-family: Poppins !important;
+  }
+  
+  span {
+    font-family: Poppins !important;
+  }
+  
+  ion-title {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  ion-menu-button {
+    position: absolute;
+  }
+  
+  ion-buttons {
+    position: absolute;
+  }
+  
+  ion-app{
+    background-color: #f3f3f3;
+  }
