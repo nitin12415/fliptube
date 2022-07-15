@@ -10,6 +10,11 @@
 </ion-header>
 
 <ion-content [scrollEvents]="true" (ionScroll)="didScroll($event)">
+  <ion-refresher style="background-color: #f7f7f7;;" mode="ios" slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="chevron-down-circle-outline" pullingText="Pull to refresh"
+      refreshingSpinner="circles">
+    </ion-refresher-content>
+  </ion-refresher>
   <ion-grid class="ion-no-padding">
     <ion-row *ngFor="let feed of feeds">
       <ion-col size="12">
